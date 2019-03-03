@@ -9,3 +9,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Git\n\n"
 
 install_package "Git" "git"
+git config --global user.email "simon.siefke@gmail.com"
+git config --global user.name "Simon Siefke"
