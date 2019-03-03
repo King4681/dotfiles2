@@ -10,8 +10,6 @@ print_in_purple "\n   Browsers\n\n"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-printf "\n"
-
 if ! command_exists "google-chrome"; then
 
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
