@@ -15,6 +15,8 @@ execute "gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend 'fal
     "Disable Lockscreen"
 execute "dconf write /org/gnome/shell/favorite-apps \"['org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'firefox.desktop', 'vscode_vscode.desktop', 'code-insiders_code-insiders.desktop', 'org.gnome.Terminal.desktop']\"" \
     "Set favorite apps"
+execute "gsettings set org.gnome.desktop.session idle-delay 0" \
+    "Disable screen lock"
 # execute "gsettings set com.canonical.Unity.Launcher favorites \"[
 #             'ubiquity-gtkui.desktop',
 #             'nautilus-home.desktop'
