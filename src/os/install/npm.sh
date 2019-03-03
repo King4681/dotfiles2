@@ -28,8 +28,6 @@ main() {
 
     printf "\n"
 
-    install_npm_package "!nstant-markdown-d" "instant-markdown-d"
-
 }
 
 main
