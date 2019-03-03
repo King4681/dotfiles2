@@ -13,7 +13,7 @@ execute "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'min
     "Enable minimize window on click"
 execute "gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend 'false'" \
     "Disable Lockscreen"
-execute "dconf write /org/gnome/shell/favorite-apps \"['org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'firefox.desktop', 'vscode_vscode.desktop', 'code-insiders_code-insiders.desktop', 'org.gnome.Terminal.desktop']\"" \
+execute "dconf write /org/gnome/shell/favorite-apps \"['org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'firefox.desktop', 'spotify_spotify.desktop', 'code-insiders_code-insiders.desktop', 'vscode_vscode.desktop', 'org.gnome.Terminal.desktop']\"" \
     "Set favorite apps"
 execute "gsettings set org.gnome.desktop.session idle-delay 0" \
     "Disable screen lock"
