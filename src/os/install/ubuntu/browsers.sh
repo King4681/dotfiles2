@@ -12,5 +12,4 @@ print_in_purple "\n   Browsers\n\n"
 
 printf "\n"
 
-install_package "Flash" "flashplugin-installer"
-install_command "Chrome" "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome*.deb"
+install_command "Chrome" "google-chrome" "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome*.deb && rm -rf ./google-chrome*.deb"
