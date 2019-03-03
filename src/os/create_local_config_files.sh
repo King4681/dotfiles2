@@ -29,6 +29,7 @@ create_gitconfig_local() {
 
         printf "%s\n" \
 "[user]
+
     name = Simon Siefke
     email = simon.siefke@gmail.com
     # signingkey =" \
