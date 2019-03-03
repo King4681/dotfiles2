@@ -17,6 +17,8 @@ execute "dconf write /org/gnome/shell/favorite-apps \"['org.gnome.Nautilus.deskt
     "Set favorite apps"
 execute "gsettings set org.gnome.desktop.session idle-delay 0" \
     "Disable screen lock"
+execute "gsettings set org.gnome.desktop.background show-desktop-icons false" \
+    "Disable desktop icons"
 # execute "gsettings set com.canonical.Unity.Launcher favorites \"[
 #             'ubiquity-gtkui.desktop',
 #             'nautilus-home.desktop'
