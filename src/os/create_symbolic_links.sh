@@ -21,9 +21,7 @@ create_symlinks() {
         "shell/curlrc"
         "shell/inputrc"
 
-        "git/gitattributes"
         "git/gitconfig"
-        "git/gitignore"
     )
 
     local i=""

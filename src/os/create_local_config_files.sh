@@ -19,27 +19,6 @@ create_bash_local() {
 
 }
 
-create_gitconfig_local() {
-
-    declare -r FILE_PATH="$HOME/.gitconfig.local"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    if [ ! -e "$FILE_PATH" ] || [ -z "$FILE_PATH" ]; then
-
-        printf "%s\n" \
-"[user]
-
-    name = Simon Siefke
-    email = simon.siefke@gmail.com
-    # signingkey =" \
-        >> "$FILE_PATH"
-    fi
-
-    print_result $? "$FILE_PATH"
-
-}
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
@@ -47,8 +26,6 @@ main() {
     print_in_purple "\n • Create local config files\n\n"
 
     create_bash_local
-    create_gitconfig_local
-
 }
 
 main
