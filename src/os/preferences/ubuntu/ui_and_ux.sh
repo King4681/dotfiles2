@@ -7,8 +7,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   UI & UX\n\n"
 
-execute "gsettings set org.gnome.libgnomekbd.keyboard layouts \"[ 'us', 'ro' ]\"" \
-    "Set keyboard languages"
 execute "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'" \
     "Enable minimize window on click"
 execute "gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend 'false'" \
@@ -21,8 +19,3 @@ execute "gsettings set org.gnome.desktop.background show-desktop-icons false" \
     "Disable desktop icons"
 execute "sudo mv -f ~/projects/dotfiles/src/os/preferences/ubuntu/indicator-multiload-preferences-ui.xml /usr/share/indicator-multiload/preferences.ui" \
     "Custom Indicator multiload settings"
-# execute "gsettings set com.canonical.Unity.Launcher favorites \"[
-#             'ubiquity-gtkui.desktop',
-#             'nautilus-home.desktop'
-#          ]\"" \
-#     "Set Launcher favorites"
