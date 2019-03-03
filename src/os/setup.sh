@@ -58,43 +58,7 @@ download_dotfiles() {
     printf "\n"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    if ! $skipQuestions; then
-
-        ask_for_confirmation "Do you want to store the dotfiles in '$dotfilesDirectory'?"
-
-        if ! answer_is_yes; then
-            dotfilesDirectory=""
-            while [ -z "$dotfilesDirectory" ]; do
-                ask "Please specify another location for the dotfiles (path): "
-                dotfilesDirectory="$(get_answer)"
-            done
-        fi
-
-        # Ensure the `dotfiles` directory is available
-
-        while [ -e "$dotfilesDirectory" ]; do
-            ask_for_confirmation "'$dotfilesDirectory' already exists, do you want to overwrite it?"
-            if answer_is_yes; then
-                rm -rf "$dotfilesDirectory"
-                break
-            else
-                dotfilesDirectory=""
-                while [ -z "$dotfilesDirectory" ]; do
-                    ask "Please specify another location for the dotfiles (path): "
-                    dotfilesDirectory="$(get_answer)"
-                done
-            fi
-        done
-
-        printf "\n"
-
-    else
-
-        rm -rf "$dotfilesDirectory" &> /dev/null
-
-    fi
-
+    rm -rf "$dotfilesDirectory" &> /dev/null
     mkdir -p "$dotfilesDirectory"
     print_result $? "Create '$dotfilesDirectory'" "true"
 
