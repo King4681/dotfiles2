@@ -245,6 +245,11 @@ main() {
 
     ./preferences/main.sh
 
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ./setup_vscode.sh
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     if cmd_exists "git"; then
