@@ -50,15 +50,19 @@ install_package() {
 
 install_command() {
     declare -r COMMAND="$3"
-    declare -r PACKAGE_READABLE_NAME="$2"
+    declare -r PACKAGE="$2"
     declare -r PACKAGE_READABLE_NAME="$1"
 
-    if ! package_is_installed "$PACKAGE"; then
+    if ! command_exists "$PACKAGE"; then
         execute "$COMMAND"
     else
         print_success "$PACKAGE_READABLE_NAME"
     fi
 
+}
+
+command_exists(){
+  command -v "$1" &> /dev/null
 }
 
 package_is_installed() {
