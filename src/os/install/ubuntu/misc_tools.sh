@@ -10,3 +10,4 @@ print_in_purple "\n   Miscellaneous Tools\n\n"
 
 install_package "cURL" "curl"
 install_package "gconf" "gconf2"
+install_package "xclip" "xclip"
