@@ -48,6 +48,20 @@ install_package() {
 
 }
 
+install_command() {
+    declare -r COMMAND="$2"
+    declare -r PACKAGE_READABLE_NAME="$1"
+
+    if ! package_is_installed "$PACKAGE"; then
+        execute "$COMMAND"
+        #                                      suppress output ─┘│
+        #            assume "yes" as the answer to all prompts ──┘
+    else
+        print_success "$PACKAGE_READABLE_NAME"
+    fi
+
+}
+
 package_is_installed() {
     dpkg -s "$1" &> /dev/null
 }
