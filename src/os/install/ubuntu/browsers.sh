@@ -14,15 +14,9 @@ printf "\n"
 
 if ! command_exists "google-chrome"; then
 
-    add_key "https://dl-ssl.google.com/linux/linux_signing_key.pub" \
-        || print_error "Chrome (add key)"
-
-    add_to_source_list "[arch=amd64] https://dl.google.com/linux/deb/ stable main" "google-chrome.list" \
-        || print_error "Chrome (add to package resource list)"
-
-    update &> /dev/null \
-        || print_error "Chrome (resync package index files)"
-
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+    sudo apt-get update 
 fi
 
-install_package "Chrome" "google-chrome"
+install_package "Chrome" "google-chrome-stable"
