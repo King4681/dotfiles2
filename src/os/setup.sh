@@ -159,7 +159,7 @@ verify_os() {
     # Check if the OS is `Ubuntu` and
     # it's above the required version.
 
-    elif [ "$os_name" == "Linux" ] && [ -e "/etc/lsb-release" ]; then
+    if [ "$os_name" == "Linux" ] && [ -e "/etc/lsb-release" ]; then
 
         os_version="$(lsb_release -d | cut -f2 | cut -d' ' -f2)"
 
