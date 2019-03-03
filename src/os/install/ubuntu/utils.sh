@@ -54,7 +54,7 @@ install_command() {
     declare -r PACKAGE_READABLE_NAME="$1"
 
     if ! command_exists "$PACKAGE"; then
-        execute "$COMMAND"
+        execute "$COMMAND" "$PACKAGE_READABLE_NAME"
     else
         print_success "$PACKAGE_READABLE_NAME"
     fi
