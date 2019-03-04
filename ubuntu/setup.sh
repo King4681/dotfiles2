@@ -145,12 +145,10 @@ extract() {
 
 verify_os() {
 
-    declare -r MINIMUM_UBUNTU_VERSION="14.04"
+    declare -r MINIMUM_UBUNTU_VERSION="18.10"
 
-    local os_name=""
+    local os_name="$(uname -s)"
     local os_version=""
-
-    os_name="$(uname -s)"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -239,7 +237,7 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./install/main.sh
+    ./packages/main.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -249,22 +247,6 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     ./setup_vscode.sh
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    if cmd_exists "git"; then
-
-        if [ "$(git config --get remote.origin.url)" != "$DOTFILES_ORIGIN" ]; then
-            ./initialize_git_repository.sh "$DOTFILES_ORIGIN"
-        fi
-
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-        if ! $skipQuestions; then
-            ./update_content.sh
-        fi
-
-    fi
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

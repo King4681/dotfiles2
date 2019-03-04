@@ -7,6 +7,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n • Preferences\n"
 
-./privacy.sh
-./terminal.sh
-./ui_and_ux.sh
+./privacy/configure.sh
+./terminal/configure.sh
+./ui_and_ux/configure.sh

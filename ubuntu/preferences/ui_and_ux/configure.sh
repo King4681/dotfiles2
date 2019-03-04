@@ -17,5 +17,5 @@ execute "gsettings set org.gnome.desktop.session idle-delay 0" \
     "Disable screen lock"
 execute "gsettings set org.gnome.desktop.background show-desktop-icons false" \
     "Disable desktop icons"
-execute "sudo mv -f ~/projects/dotfiles/src/os/preferences/ubuntu/indicator-multiload-preferences-ui.xml /usr/share/indicator-multiload/preferences.ui" \
+execute "sudo mv -f ./indicator-multiload-preferences-ui.xml /usr/share/indicator-multiload/preferences.ui" \
     "Custom Indicator multiload settings"
