@@ -8,6 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n • Installs\n\n"
 
 install_command "Chrome" "chrome-stable" "sh ./chrome/install.sh"
+install_command "Docker" "docker" "sh ./docker/install.sh"
 install_command "Franz" "franz" "sh ./franz/install.sh"
 install_command "Git" "git" "sh ./git/install.sh"
 install_command "Kubectl" "kubectl" "sh ./kubectl/install.sh"
