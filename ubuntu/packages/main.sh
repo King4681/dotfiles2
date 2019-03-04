@@ -8,17 +8,23 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n • Installs\n\n"
 
 install_command "Chrome" "chrome-stable" "sh ./chrome/install.sh"
+install_command "cUrl" "curl" "sh ./curl/install.sh"
 install_command "Docker" "docker" "sh ./docker/install.sh"
 install_command "Franz" "franz" "sh ./franz/install.sh"
+install_command "gconf" "gconf2" "sh ./gconf/install.sh"
 install_command "Git" "git" "sh ./git/install.sh"
+install_command "Gnome Tweak Tool" "gnome-tweaks" "sh ./gnome-tweak-tool/install.sh"
 install_command "Kubectl" "kubectl" "sh ./kubectl/install.sh"
 install_command "Mega Sync" "mega-sync" "sh ./mega-sync/install.sh"
 install_command "Minikube" "minikube" "sh ./minikube/install.sh"
 install_command "Nvm" "nvm" "sh ./nvm/install.sh"
+install_command "Preload" "preload" "sh ./preload/install.sh"
 install_command "VLC" "vlc" "sh ./vlc/install.sh"
 install_command "Spotify" "spotify" "sh ./spotify/install.sh"
+install_command "TheFuck" "fuck" "sh ./thefuck/install.sh"
 install_command "VSCode" "code" "sh ./vscode/install.sh"
 install_command "VSCode Insiders" "code-insiders" "sh ./vscode-insiders/install.sh"
+install_command "xclip" "xclip" "sh ./xclip/install.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
