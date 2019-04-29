@@ -243,7 +243,6 @@ main() {
 
     ./preferences/main.sh
 
-
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     ./setup_vscode.sh
