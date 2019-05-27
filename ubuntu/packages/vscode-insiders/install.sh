@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo snap install -y vscode-insiders
+sudo snap install -y code-insiders
 
 if code-insiders --list-extensions &>/dev/null; then
     code-insiders --install-extension Shan.code-settings-sync

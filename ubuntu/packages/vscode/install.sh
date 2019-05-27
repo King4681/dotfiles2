@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo snap install -y vscode
+sudo snap install -y code
 
 if code --list-extensions &>/dev/null; then
     code --install-extension Shan.code-settings-sync
