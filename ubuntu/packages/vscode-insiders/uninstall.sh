@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo snap remove vscode-insiders
+sudo snap remove code-insiders
