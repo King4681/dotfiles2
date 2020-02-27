@@ -9,19 +9,11 @@ alias cd..="cd .."
 
 # Node shortcuts
 
-alias start='yarn start'
-alias d='yarn dev'
-alias b='yarn build'
+alias start='npm start'
+alias d='npm run dev'
+alias b='npm run build'
 alias init='npm init -y'
-alias i='npm ci'
 alias e2e='npm run e2e'
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Git shortcuts
-
-alias g="git"
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
