@@ -1,0 +1,30 @@
+#!/bin/bash
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias cd..="cd .."
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Node shortcuts
+
+alias start='yarn start'
+alias d='yarn dev'
+alias b='yarn build'
+alias init='npm init -y'
+alias i='npm ci'
+alias e2e='npm run e2e'
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Git shortcuts
+
+alias g="git"
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Load OS specific aliases.
+
+. "aliases/$OS/bash_aliases"
