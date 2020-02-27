@@ -3,9 +3,8 @@ clear
 
 # install node version manager (nvm)
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 source ~/.nvm/nvm.sh
-clear
 
 echo 'almost done'
 nvm install node
@@ -25,5 +24,5 @@ echo 'finished installing node'
 echo 'now installing packages...'
 
 # install useful npm packages
-npm i -g @vue/cli
+npm i -g @vue/cli http-server
 echo 'finished'

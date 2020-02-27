@@ -40,7 +40,7 @@ install_command "cUrl" "curl" "sh ./dev.curl/install.sh"
 install_command "Git" "git" "sh ./dev.git/install.sh"
 # install_command "Kubectl" "kubectl" "sh ./dev.kubectl/install.sh"
 # install_command "Minikube" "minikube" "sh ./dev.minikube/install.sh"
-# install_command "Nvm" "nvm" "sh ./dev.nvm/install.sh"
+install_command "Nvm" "nvm" "sh ./dev.nvm/install.sh"
 # install_command "Virtual Box" "nvm" "sh ./dev.virtualbox/install.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -64,8 +64,8 @@ print_in_purple "\n   Languages\n\n"
 print_in_purple "\n   Miscellaneous\n\n"
 
 # install_command "Franz" "franz" "sh ./misc.franz/install.sh"
-install_command "Libre Office" "libre-office" "sh ./misc.libreoffice/install.sh"
-install_command "Mega Sync" "megasync" "sh ./misc.mega-sync/install.sh"
+# install_command "Libre Office" "libre-office" "sh ./misc.libreoffice/install.sh"
+# install_command "Mega Sync" "megasync" "sh ./misc.mega-sync/install.sh"
 # install_command "Spotify" "spotify" "sh ./misc.spotify/install.sh"
 install_command "VLC" "vlc" "sh ./misc.vlc/install.sh"
 
@@ -74,7 +74,7 @@ install_command "VLC" "vlc" "sh ./misc.vlc/install.sh"
 print_in_purple "\n   Tweak\n\n"
 
 install_command "Gnome Tweak Tool" "gnome-tweaks" "sh ./tweak.gnome-tweak-tool/install.sh"
-install_command "Indicator Multiload" "indicator-multiload" "sh ./tweak.indicator-multiload/install.sh"
+# install_command "Indicator Multiload" "indicator-multiload" "sh ./tweak.indicator-multiload/install.sh"
 install_command "Preload" "preload" "sh ./tweak.preload/install.sh"
 install_command "TheFuck" "fuck" "sh ./tweak.thefuck/install.sh"
 install_command "Z" "z" "sh ./tweak.z/install.sh"
