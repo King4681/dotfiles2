@@ -14,6 +14,7 @@ alias d='npm run dev'
 alias b='npm run build'
 alias init='npm init -y'
 alias e2e='npm run e2e'
+alias u='sudo apt update && sudo apt upgrade'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
