@@ -30,6 +30,7 @@ print_in_purple "\n • Installs\n\n"
 
 print_in_purple "\n   Browsers\n\n"
 install_command "Chrome" "google-chrome" "sh ./browser.chrome/install.sh"
+install_command "Firefox" "firefox" "sudo apt install -y firefox"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -63,9 +64,9 @@ print_in_purple "\n   Languages\n\n"
 
 print_in_purple "\n   Miscellaneous\n\n"
 
-# install_command "Franz" "franz" "sh ./misc.franz/install.sh"
+install_command "Franz" "franz" "sh ./misc.franz/install.sh"
 # install_command "Libre Office" "libre-office" "sh ./misc.libreoffice/install.sh"
-# install_command "Mega Sync" "megasync" "sh ./misc.mega-sync/install.sh"
+install_command "Mega Sync" "megasync" "sh ./misc.mega-sync/install.sh"
 # install_command "Spotify" "spotify" "sh ./misc.spotify/install.sh"
 install_command "VLC" "vlc" "sh ./misc.vlc/install.sh"
 

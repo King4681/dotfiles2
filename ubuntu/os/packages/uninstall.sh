@@ -8,6 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n • Installs\n\n"
 
 install_command "Chrome" "chrome-stable" "sh ./chrome/uninstall.sh"
+install_command "Firefox" "firefox" "sudo apt purge git"
 install_command "cUrl" "curl" "sh ./curl/uninstall.sh"
 install_command "Docker" "docker" "sh ./docker/uninstall.sh"
 install_command "Franz" "franz" "sh ./franz/uninstall.sh"

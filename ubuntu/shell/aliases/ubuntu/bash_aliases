@@ -3,5 +3,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Ubuntu
+#This seems very secure
 alias u='echo Kaugummi1 | sudo -S apt update -y && sudo apt upgrade -y'
 alias please='echo Kaugummi1 | sudo -S $(history -p !!)'
+alias sudo="echo Kaugummi1 | sudo"
